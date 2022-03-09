@@ -1,24 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PrimeFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141" y="124"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FKx-vm-kd3">
+            <objects>
+                <viewController id="Qbr-Bp-IQ3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jV0-zZ-Q1m">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjb-Dt-Sdv" userLabel="MainHolder">
+                                <rect key="frame" x="82" y="-46" width="860" height="860"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f0N-6G-yWV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gjb-Dt-Sdv" firstAttribute="height" secondItem="jV0-zZ-Q1m" secondAttribute="height" multiplier="0.64" id="0O8-OJ-IoT"/>
+                            <constraint firstItem="gjb-Dt-Sdv" firstAttribute="width" secondItem="jV0-zZ-Q1m" secondAttribute="height" multiplier="1.04" id="6zl-tT-Z9U"/>
+                            <constraint firstItem="gjb-Dt-Sdv" firstAttribute="width" secondItem="jV0-zZ-Q1m" secondAttribute="width" multiplier="0.84" id="GA8-rv-gXU"/>
+                            <constraint firstItem="gjb-Dt-Sdv" firstAttribute="width" secondItem="jV0-zZ-Q1m" secondAttribute="width" multiplier="0.84" id="GCz-11-tXq"/>
+                            <constraint firstItem="gjb-Dt-Sdv" firstAttribute="height" secondItem="jV0-zZ-Q1m" secondAttribute="width" multiplier="0.84" id="VqK-d0-E3O"/>
+                            <constraint firstItem="gjb-Dt-Sdv" firstAttribute="width" secondItem="jV0-zZ-Q1m" secondAttribute="height" multiplier="1.04" id="g52-np-3af"/>
+                            <constraint firstItem="gjb-Dt-Sdv" firstAttribute="centerY" secondItem="jV0-zZ-Q1m" secondAttribute="centerY" id="kK2-mK-KCi"/>
+                            <constraint firstItem="gjb-Dt-Sdv" firstAttribute="centerX" secondItem="jV0-zZ-Q1m" secondAttribute="centerX" id="qk3-Nq-5Dn"/>
+                            <constraint firstItem="gjb-Dt-Sdv" firstAttribute="height" secondItem="jV0-zZ-Q1m" secondAttribute="height" multiplier="0.64" id="rBt-6u-AVe"/>
+                            <constraint firstItem="gjb-Dt-Sdv" firstAttribute="height" secondItem="jV0-zZ-Q1m" secondAttribute="width" multiplier="0.84" id="rKw-GP-H8F"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0O8-OJ-IoT"/>
+                                <exclude reference="6zl-tT-Z9U"/>
+                                <exclude reference="GA8-rv-gXU"/>
+                                <exclude reference="GCz-11-tXq"/>
+                                <exclude reference="VqK-d0-E3O"/>
+                                <exclude reference="g52-np-3af"/>
+                                <exclude reference="rBt-6u-AVe"/>
+                                <exclude reference="rKw-GP-H8F"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="0O8-OJ-IoT"/>
+                                <include reference="6zl-tT-Z9U"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="g52-np-3af"/>
+                                <include reference="rBt-6u-AVe"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="GCz-11-tXq"/>
+                                <include reference="rKw-GP-H8F"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="GA8-rv-gXU"/>
+                                <include reference="VqK-d0-E3O"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EpA-Y7-5Do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="123"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
